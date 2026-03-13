@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import { audioGuides } from "@/data";
 import { AudioGuide } from "@/lib/types";
+import MapView from "@/components/MapView";
 
 function haversineDistance(
   lat1: number,
@@ -47,6 +48,7 @@ export default function AudioguiaSection() {
   } | null>(null);
   const [currentlyPlaying, setCurrentlyPlaying] = useState<string | null>(null);
   const [playbackRate, setPlaybackRate] = useState(1);
+  const [viewMode, setViewMode] = useState<"list" | "map">("list");
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const watchIdRef = useRef<number | null>(null);
 
@@ -150,8 +152,38 @@ export default function AudioguiaSection() {
         </button>
       </div>
 
+      {/* Map Toggle */}
+      <div className="flex justify-end px-4 mb-3">
+        <button
+          onClick={() => setViewMode(viewMode === "list" ? "map" : "list")}
+          className="px-4 py-2 rounded-full text-sm font-medium transition-colors bg-blue-100 text-blue-700 hover:bg-blue-200"
+        >
+          {viewMode === "list" ? "🗺️ Ver mapa" : "📋 Ver lista"}
+        </button>
+      </div>
+
+      {/* Map View */}
+      {viewMode === "map" && (
+        <div className="px-4 mb-4">
+          <MapView
+            center={{ lat: 37.92, lng: -2.94 }}
+            zoom={11}
+            height="500px"
+            userLocation={gpsActive ? userLocation : null}
+            markers={sortedGuides.map((guide) => ({
+              id: guide.id,
+              position: guide.coordinates,
+              title: guide.name,
+              description: guide.description,
+              emoji: "🎧",
+              onClick: () => handlePlay(guide),
+            }))}
+          />
+        </div>
+      )}
+
       {/* Guide list */}
-      <div className="flex flex-col gap-3 px-4">
+      {viewMode === "list" && <div className="flex flex-col gap-3 px-4">
         {sortedGuides.map((guide) => {
           const distance =
             gpsActive && userLocation
@@ -217,7 +249,7 @@ export default function AudioguiaSection() {
             </div>
           );
         })}
-      </div>
+      </div>}
 
       {/* Audio player - fixed at bottom above nav */}
       {playingGuide && (

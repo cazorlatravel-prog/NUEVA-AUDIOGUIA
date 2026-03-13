@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { pois } from "@/data";
 import { PointOfInterest } from "@/lib/types";
+import MapView from "@/components/MapView";
 
 const categoryConfig: Record<string, { label: string; emoji: string; color: string }> = {
   monumento: { label: "Monumentos", emoji: "\u{1F3F0}", color: "bg-amber-100 text-amber-800" },
@@ -26,6 +27,7 @@ const filterOptions = [
 export default function QueVerSection() {
   const [activeFilter, setActiveFilter] = useState("todos");
   const [selectedPoi, setSelectedPoi] = useState<PointOfInterest | null>(null);
+  const [viewMode, setViewMode] = useState<"list" | "map">("list");
 
   const filteredPois =
     activeFilter === "todos"
@@ -43,7 +45,7 @@ export default function QueVerSection() {
           Qué Ver en Cazorla
         </h2>
 
-        {/* Filter Pills */}
+        {/* Filter Pills + Map Toggle */}
         <div className="flex flex-wrap justify-center gap-2">
           {filterOptions.map((filter) => (
             <button
@@ -58,11 +60,47 @@ export default function QueVerSection() {
               {filter.label}
             </button>
           ))}
+          <button
+            onClick={() => setViewMode(viewMode === "list" ? "map" : "list")}
+            className="rounded-full px-4 py-1.5 text-sm font-medium transition bg-blue-100 text-blue-700 hover:bg-blue-200"
+          >
+            {viewMode === "list" ? "🗺️ Ver mapa" : "📋 Ver lista"}
+          </button>
         </div>
       </div>
 
+      {/* Map View */}
+      {viewMode === "map" && (
+        <MapView
+          center={{ lat: 37.92, lng: -2.94 }}
+          zoom={11}
+          height="500px"
+          markers={filteredPois
+            .filter((poi) => poi.coordinates)
+            .map((poi) => {
+              const emojiMap: Record<string, string> = {
+                monumento: "\u{1F3F0}",
+                naturaleza: "\u{1F33F}",
+                mirador: "\u{1F441}\uFE0F",
+                pueblo: "\u{1F3D8}\uFE0F",
+                museo: "\u{1F3DB}\uFE0F",
+                religioso: "\u26EA",
+                otro: "\u{1F4CD}",
+              };
+              return {
+                id: poi.id,
+                position: poi.coordinates,
+                title: poi.name,
+                description: poi.shortDescription,
+                emoji: emojiMap[poi.category] ?? "\u{1F4CD}",
+                onClick: () => setSelectedPoi(poi),
+              };
+            })}
+        />
+      )}
+
       {/* POI Grid */}
-      <div className="mx-auto grid w-full max-w-5xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {viewMode === "list" && <div className="mx-auto grid w-full max-w-5xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {filteredPois.map((poi) => {
           const catInfo = getCategoryInfo(poi.category);
           return (
@@ -111,7 +149,7 @@ export default function QueVerSection() {
             </div>
           );
         })}
-      </div>
+      </div>}
 
       {filteredPois.length === 0 && (
         <p className="py-12 text-center text-gray-400">

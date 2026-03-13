@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { trails } from "@/data";
 import { Trail } from "@/lib/types";
+import MapView from "@/components/MapView";
 
 const filterOptions = [
   { label: "Todas", value: "todas" },
@@ -31,6 +32,7 @@ const typeEmojis: Record<Trail["type"], string> = {
 export default function RutasSection() {
   const [activeFilter, setActiveFilter] = useState<string>("todas");
   const [selectedTrail, setSelectedTrail] = useState<Trail | null>(null);
+  const [viewMode, setViewMode] = useState<"list" | "map">("list");
 
   const filteredTrails =
     activeFilter === "todas"
@@ -44,7 +46,7 @@ export default function RutasSection() {
         Rutas y Senderos
       </h2>
 
-      {/* Filter pills */}
+      {/* Filter pills + Map Toggle */}
       <div className="flex gap-2 overflow-x-auto px-4 pb-4 scrollbar-hide">
         {filterOptions.map((filter) => (
           <button
@@ -59,10 +61,35 @@ export default function RutasSection() {
             {filter.label}
           </button>
         ))}
+        <button
+          onClick={() => setViewMode(viewMode === "list" ? "map" : "list")}
+          className="flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-colors bg-blue-100 text-blue-700 hover:bg-blue-200"
+        >
+          {viewMode === "list" ? "🗺️ Ver mapa" : "📋 Ver lista"}
+        </button>
       </div>
 
+      {/* Map View */}
+      {viewMode === "map" && (
+        <div className="px-4 mb-4">
+          <MapView
+            center={{ lat: 37.92, lng: -2.94 }}
+            zoom={11}
+            height="500px"
+            markers={filteredTrails.map((trail) => ({
+              id: trail.id,
+              position: trail.startPoint,
+              title: trail.name,
+              description: `${trail.distance} km · ${difficultyColors[trail.difficulty].text}`,
+              emoji: typeEmojis[trail.type],
+              onClick: () => setSelectedTrail(trail),
+            }))}
+          />
+        </div>
+      )}
+
       {/* Trail list */}
-      <div className="flex flex-col gap-4 px-4">
+      {viewMode === "list" && <div className="flex flex-col gap-4 px-4">
         {filteredTrails.map((trail) => {
           const dc = difficultyColors[trail.difficulty];
           const emoji = typeEmojis[trail.type];
@@ -166,7 +193,7 @@ export default function RutasSection() {
             No se encontraron rutas con este filtro.
           </div>
         )}
-      </div>
+      </div>}
 
       {/* Detail modal */}
       {selectedTrail && (
@@ -310,6 +337,31 @@ export default function RutasSection() {
                   </div>
                 </div>
               )}
+
+              {/* Trail Map */}
+              <div className="mb-5">
+                <h4 className="font-semibold text-gray-900 mb-2">Mapa del recorrido</h4>
+                <MapView
+                  center={selectedTrail.startPoint}
+                  zoom={13}
+                  height="250px"
+                  markers={[
+                    {
+                      id: `${selectedTrail.id}-start`,
+                      position: selectedTrail.startPoint,
+                      title: "Inicio",
+                      emoji: "🟢",
+                    },
+                    {
+                      id: `${selectedTrail.id}-end`,
+                      position: selectedTrail.endPoint,
+                      title: "Final",
+                      emoji: "🔴",
+                    },
+                  ]}
+                  waypoints={[selectedTrail.startPoint, ...(selectedTrail.waypoints || []), selectedTrail.endPoint]}
+                />
+              </div>
 
               {/* Action buttons */}
               <div className="flex gap-3 mt-6">

@@ -19,7 +19,11 @@ export const pois: PointOfInterest[] = [
     description:
       "Fortaleza medieval del siglo XI que domina el pueblo de Cazorla desde lo alto del cerro. Alberga el Museo de Artes y Costumbres Populares del Alto Guadalquivir. Sus torres ofrecen unas vistas espectaculares del valle y la sierra.",
     shortDescription: "Fortaleza medieval del siglo XI con museo y vistas panorámicas del valle.",
-    images: [],
+    images: [
+      "https://images.unsplash.com/photo-1533154683836-84ea7a0bc310?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&h=500&fit=crop",
+    ],
     coordinates: { lat: 37.9081, lng: -3.0014 },
     audioUrl: "/audio/castillo-yedra.mp3",
     openingHours: "Mar-Sáb 9:00-21:00, Dom 9:00-15:00",
@@ -35,7 +39,11 @@ export const pois: PointOfInterest[] = [
     description:
       "El río más importante de Andalucía nace en la Cañada de las Fuentes, a 1.400 metros de altitud. Un lugar simbólico rodeado de una naturaleza impresionante donde brota el agua que recorrerá 657 km hasta Sanlúcar de Barrameda.",
     shortDescription: "Lugar donde nace el río más largo de Andalucía, a 1.400m de altitud.",
-    images: [],
+    images: [
+      "https://images.unsplash.com/photo-1432405972618-c6b0cfba8b00?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=500&fit=crop",
+    ],
     coordinates: { lat: 37.8541, lng: -2.9524 },
     audioUrl: "/audio/nacimiento-guadalquivir.mp3",
     tags: ["naturaleza", "agua", "simbólico"],
@@ -49,7 +57,10 @@ export const pois: PointOfInterest[] = [
     description:
       "Espectacular desfiladero sobre el río Borosa con pasarelas de madera ancladas a la roca. Un recorrido corto pero impresionante que permite caminar sobre las aguas cristalinas del río entre paredes verticales de piedra caliza.",
     shortDescription: "Desfiladero con pasarelas de madera sobre las aguas cristalinas del río Borosa.",
-    images: [],
+    images: [
+      "https://images.unsplash.com/photo-1432405972618-c6b0cfba8b00?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&h=500&fit=crop",
+    ],
     coordinates: { lat: 37.9255, lng: -2.8465 },
     tags: ["desfiladero", "agua", "pasarelas"],
     featured: true,
@@ -62,7 +73,10 @@ export const pois: PointOfInterest[] = [
     description:
       "Puente medieval del siglo XV por el que, según la tradición, cruzó la reina Isabel la Católica camino de la conquista de los últimos reductos musulmanes. Rodeado de un bosque de ribera excepcional.",
     shortDescription: "Puente medieval del siglo XV ligado a la historia de Isabel la Católica.",
-    images: [],
+    images: [
+      "https://images.unsplash.com/photo-1533154683836-84ea7a0bc310?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=500&fit=crop",
+    ],
     coordinates: { lat: 37.8913, lng: -2.9568 },
     audioUrl: "/audio/puente-herrerias.mp3",
     tags: ["medieval", "historia", "naturaleza"],
@@ -76,7 +90,11 @@ export const pois: PointOfInterest[] = [
     description:
       "Principal centro de interpretación del Parque Natural. Ofrece exposiciones sobre flora, fauna y geología de la sierra. Punto de partida ideal para conocer el parque. Incluye jardín botánico y sala de proyecciones.",
     shortDescription: "Centro de interpretación del Parque Natural con exposiciones y jardín botánico.",
-    images: [],
+    images: [
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&h=500&fit=crop",
+    ],
     coordinates: { lat: 37.9417, lng: -2.8698 },
     openingHours: "Todos los días 10:00-14:00 y 16:00-19:00",
     price: "Gratuito",
@@ -91,7 +109,10 @@ export const pois: PointOfInterest[] = [
     description:
       "Hermosa cascada de unos 8 metros de altura en un entorno de vegetación exuberante. Se accede por un sendero fácil desde la carretera del Tranco. Especialmente espectacular en primavera con el deshielo.",
     shortDescription: "Cascada de 8 metros en un entorno de vegetación exuberante.",
-    images: [],
+    images: [
+      "https://images.unsplash.com/photo-1432405972618-c6b0cfba8b00?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&h=500&fit=crop",
+    ],
     coordinates: { lat: 37.9325, lng: -2.8612 },
     tags: ["cascada", "naturaleza", "senderismo"],
     featured: false,
@@ -104,7 +125,10 @@ export const pois: PointOfInterest[] = [
     description:
       "Ubicado en el Castillo de la Yedra, este museo recoge la etnografía del Alto Guadalquivir: herramientas agrícolas, utensilios domésticos, trajes tradicionales y recreaciones de espacios de vida cotidiana de la sierra.",
     shortDescription: "Etnografía del Alto Guadalquivir en el interior del Castillo de la Yedra.",
-    images: [],
+    images: [
+      "https://images.unsplash.com/photo-1533154683836-84ea7a0bc310?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=500&fit=crop",
+    ],
     coordinates: { lat: 37.9081, lng: -3.0014 },
     openingHours: "Mar-Sáb 9:00-21:00, Dom 9:00-15:00",
     price: "Gratuito para residentes UE",
@@ -119,7 +143,11 @@ export const pois: PointOfInterest[] = [
     description:
       "Impresionante mirador sobre el embalse del Tranco de Beas, el mayor embalse de la provincia de Jaén. Desde aquí se contemplan las aguas turquesas rodeadas de montañas cubiertas de pinares. Atardeceres inolvidables.",
     shortDescription: "Vistas panorámicas del mayor embalse de Jaén rodeado de montañas.",
-    images: [],
+    images: [
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800&h=500&fit=crop",
+    ],
     coordinates: { lat: 38.0564, lng: -2.8127 },
     tags: ["mirador", "embalse", "atardecer"],
     featured: true,
@@ -139,7 +167,11 @@ export const trails: Trail[] = [
     description:
       "La ruta más emblemática del Parque Natural. Recorre el valle del río Borosa pasando por la Cerrada de Elías, la Central Eléctrica, los túneles excavados en roca y la impresionante Laguna de Valdeazores. Imprescindible.",
     shortDescription: "La ruta más emblemática del Parque, hasta la Laguna de Valdeazores.",
-    images: [],
+    images: [
+      "https://images.unsplash.com/photo-1432405972618-c6b0cfba8b00?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&h=500&fit=crop",
+    ],
     startPoint: { lat: 37.9255, lng: -2.8465 },
     endPoint: { lat: 37.9402, lng: -2.8101 },
     waypoints: [],
@@ -162,7 +194,10 @@ export const trails: Trail[] = [
     description:
       "Sendero corto y sencillo hasta el lugar donde nace el río Guadalquivir en la Cañada de las Fuentes. Ideal para familias. El camino discurre entre pinos y praderas de montaña a 1.400m de altitud.",
     shortDescription: "Paseo fácil hasta el nacimiento del río más largo de Andalucía.",
-    images: [],
+    images: [
+      "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=500&fit=crop",
+    ],
     startPoint: { lat: 37.8561, lng: -2.9580 },
     endPoint: { lat: 37.8541, lng: -2.9524 },
     waypoints: [],
@@ -184,7 +219,10 @@ export const trails: Trail[] = [
     description:
       "Recorrido corto por pasarelas de madera sobre el río Borosa a través de un estrecho desfiladero de roca caliza. Apto para todos los públicos y una de las experiencias más fotogénicas del parque.",
     shortDescription: "Pasarelas de madera sobre el río Borosa en un desfiladero espectacular.",
-    images: [],
+    images: [
+      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1432405972618-c6b0cfba8b00?w=800&h=500&fit=crop",
+    ],
     startPoint: { lat: 37.9255, lng: -2.8465 },
     endPoint: { lat: 37.9270, lng: -2.8430 },
     waypoints: [],
@@ -206,7 +244,10 @@ export const trails: Trail[] = [
     description:
       "Corto sendero entre pinares que conduce a la cascada de Linarejos, una caída de agua de unos 8 metros en un entorno de vegetación de ribera. Ideal para una visita rápida con recompensa visual.",
     shortDescription: "Sendero corto hasta una cascada de 8 metros entre pinares.",
-    images: [],
+    images: [
+      "https://images.unsplash.com/photo-1432405972618-c6b0cfba8b00?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=500&fit=crop",
+    ],
     startPoint: { lat: 37.9330, lng: -2.8635 },
     endPoint: { lat: 37.9325, lng: -2.8612 },
     waypoints: [],
@@ -228,7 +269,10 @@ export const trails: Trail[] = [
     description:
       "Ruta circular en bicicleta bordeando el embalse del Tranco. Combina pistas forestales y tramos asfaltados con vistas constantes al embalse. Posibilidad de parar en áreas recreativas y playas de interior.",
     shortDescription: "Ruta ciclista circular bordeando el mayor embalse de Jaén.",
-    images: [],
+    images: [
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800&h=500&fit=crop",
+    ],
     startPoint: { lat: 38.0564, lng: -2.8127 },
     endPoint: { lat: 38.0564, lng: -2.8127 },
     waypoints: [],
@@ -250,7 +294,11 @@ export const trails: Trail[] = [
     description:
       "Ruta que rinde homenaje al célebre naturalista que rodó aquí gran parte de su serie 'El Hombre y la Tierra'. Recorre zonas de avistamiento de buitres, ciervos y cabras montesas. Incluye miradores excepcionales.",
     shortDescription: "Homenaje al naturalista, con zonas de avistamiento de fauna silvestre.",
-    images: [],
+    images: [
+      "https://images.unsplash.com/photo-1444464666168-49d633b86797?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=500&fit=crop",
+    ],
     startPoint: { lat: 37.9500, lng: -2.8450 },
     endPoint: { lat: 37.9580, lng: -2.8320 },
     waypoints: [],
@@ -348,7 +396,10 @@ export const activities: Activity[] = [
     description:
       "Recorre en kayak las aguas tranquilas del embalse más grande de Jaén. Travesías guiadas de diferentes duraciones con monitores titulados. No se necesita experiencia previa. Material incluido.",
     shortDescription: "Travesías guiadas en kayak por el embalse más grande de Jaén.",
-    images: [],
+    images: [
+      "https://images.unsplash.com/photo-1472745942893-4b9f730c7668?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&h=500&fit=crop",
+    ],
     provider: "Aventura Cazorla",
     phone: "953 721 234",
     email: "info@aventuracazorla.es",
@@ -371,7 +422,11 @@ export const activities: Activity[] = [
     description:
       "Ruta guiada por el sendero más famoso del parque con un guía experto que te descubrirá la flora, fauna y geología del valle del Borosa. Incluye almuerzo tipo picnic. Grupos reducidos.",
     shortDescription: "Ruta guiada por el sendero más emblemático con experto local.",
-    images: [],
+    images: [
+      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800&h=500&fit=crop",
+    ],
     provider: "Turisnat Cazorla",
     phone: "953 720 456",
     email: "reservas@turisnat.com",
@@ -392,7 +447,10 @@ export const activities: Activity[] = [
     description:
       "Actividad de observación de fauna en estado salvaje: ciervos, cabras montesas, buitres leonados, águilas y muflones. Al amanecer o atardecer. Prismáticos y telescopio incluidos.",
     shortDescription: "Observa ciervos, buitres y cabras montesas con guía naturalista.",
-    images: [],
+    images: [
+      "https://images.unsplash.com/photo-1444464666168-49d633b86797?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=500&fit=crop",
+    ],
     provider: "Cazorla Nature",
     phone: "620 123 456",
     email: "info@cazorlanature.com",
@@ -412,7 +470,10 @@ export const activities: Activity[] = [
     description:
       "Paseos a caballo por los senderos y pistas forestales del Parque Natural. Desde iniciación hasta rutas largas para jinetes experimentados. Caballos dóciles y bien cuidados.",
     shortDescription: "Paseos a caballo por senderos del Parque Natural.",
-    images: [],
+    images: [
+      "https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800&h=500&fit=crop",
+    ],
     provider: "Hípica Sierra de Cazorla",
     phone: "953 721 789",
     price: "40€/persona (1h), 70€ (2h)",
@@ -431,7 +492,10 @@ export const activities: Activity[] = [
     description:
       "Descenso del río Guadalentín con toboganes naturales, saltos y rapeles en un cañón de piedra espectacular. Actividad con monitores titulados. Neopreno y material técnico incluido.",
     shortDescription: "Descenso de cañones con toboganes, saltos y rapeles.",
-    images: [],
+    images: [
+      "https://images.unsplash.com/photo-1432405972618-c6b0cfba8b00?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&h=500&fit=crop",
+    ],
     provider: "Aventura Cazorla",
     phone: "953 721 234",
     email: "info@aventuracazorla.es",
@@ -451,7 +515,10 @@ export const activities: Activity[] = [
     description:
       "Recorre las calles, plazas y monumentos de Cazorla con un guía local. Conoce la historia desde los íberos hasta nuestros días. Incluye entrada al Castillo de la Yedra y degustación de aceite de oliva.",
     shortDescription: "Recorrido por la historia de Cazorla con guía local y degustación.",
-    images: [],
+    images: [
+      "https://images.unsplash.com/photo-1533154683836-84ea7a0bc310?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=500&fit=crop",
+    ],
     provider: "Guías de Cazorla",
     phone: "670 987 654",
     email: "hola@guiasdecazorla.es",
@@ -474,7 +541,10 @@ export const accommodations: Accommodation[] = [
     description:
       "Hotel de 4 estrellas con spa y piscina exterior, situado a la entrada del Parque Natural. Habitaciones con vistas a la sierra. Restaurante con cocina tradicional de la zona y menú degustación.",
     shortDescription: "Hotel 4★ con spa y piscina a la entrada del Parque Natural.",
-    images: [],
+    images: [
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=500&fit=crop",
+    ],
     address: "Ctra. de la Sierra, km 2, 23470 Cazorla",
     coordinates: { lat: 37.9050, lng: -2.9750 },
     phone: "953 720 015",
@@ -495,7 +565,10 @@ export const accommodations: Accommodation[] = [
     description:
       "Antigua almazara restaurada con encanto rústico. 3 dormitorios, salón con chimenea, cocina equipada y patio con barbacoa y vistas al olivar. Perfecto para familias o grupos de amigos.",
     shortDescription: "Antigua almazara restaurada con chimenea, patio y vistas al olivar.",
-    images: [],
+    images: [
+      "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800&h=500&fit=crop",
+    ],
     address: "Camino del Olivar, 12, 23470 Cazorla",
     coordinates: { lat: 37.9115, lng: -3.0045 },
     phone: "620 456 789",
@@ -514,7 +587,10 @@ export const accommodations: Accommodation[] = [
     description:
       "Camping en pleno corazón del Parque Natural, junto al río Guadalquivir. Parcelas amplias entre chopos y pinos. Zona de baño natural en el río. Bungalows disponibles.",
     shortDescription: "Camping en pleno Parque Natural junto al río Guadalquivir.",
-    images: [],
+    images: [
+      "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=500&fit=crop",
+    ],
     address: "Coto Ríos, 23478 Santiago-Pontones",
     coordinates: { lat: 37.9650, lng: -2.8550 },
     phone: "953 713 005",
@@ -532,7 +608,10 @@ export const accommodations: Accommodation[] = [
     description:
       "Apartamentos modernos y funcionales al pie del castillo de La Iruela, con vistas al Parque Natural. Cocina americana equipada, terraza privada. A 5 minutos en coche del centro de Cazorla.",
     shortDescription: "Apartamentos modernos con terraza y vistas al pie del castillo de La Iruela.",
-    images: [],
+    images: [
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=800&h=500&fit=crop",
+    ],
     address: "C/ Castillo, 4, 23476 La Iruela",
     coordinates: { lat: 37.9198, lng: -2.9912 },
     phone: "953 720 234",
@@ -552,7 +631,10 @@ export const accommodations: Accommodation[] = [
     description:
       "Hostal céntrico y económico en la plaza principal de Cazorla. Habitaciones sencillas pero limpias con baño privado. Ideal como base para explorar el parque. Restaurante con menú del día.",
     shortDescription: "Hostal céntrico y económico en la plaza principal de Cazorla.",
-    images: [],
+    images: [
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=800&h=500&fit=crop",
+    ],
     address: "Plaza de la Constitución, 9, 23470 Cazorla",
     coordinates: { lat: 37.9095, lng: -2.9985 },
     phone: "953 720 140",
