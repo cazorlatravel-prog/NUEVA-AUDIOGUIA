@@ -152,6 +152,109 @@ export const pois: PointOfInterest[] = [
     tags: ["mirador", "embalse", "atardecer"],
     featured: true,
   },
+  {
+    id: "poi-9",
+    name: "Plaza de Santa María",
+    slug: "plaza-santa-maria",
+    category: "religioso",
+    description:
+      "Corazón monumental de Cazorla donde se alzan las ruinas de la iglesia de Santa María, obra renacentista de Vandelvira destruida por las tropas napoleónicas. La fuente de las Cadenas preside la plaza, rodeada de edificios históricos con mucho encanto.",
+    shortDescription: "Ruinas renacentistas de Vandelvira y la fuente de las Cadenas en el corazón de Cazorla.",
+    images: [
+      "https://images.unsplash.com/photo-1533154683836-84ea7a0bc310?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&h=500&fit=crop",
+    ],
+    coordinates: { lat: 37.909, lng: -2.999 },
+    tags: ["renacentista", "plaza", "fuente"],
+    featured: true,
+  },
+  {
+    id: "poi-10",
+    name: "Castillo de La Iruela",
+    slug: "castillo-la-iruela",
+    category: "monumento",
+    description:
+      "Fortaleza templaria encaramada sobre un peñón rocoso que ofrece unas vistas impresionantes del Parque Natural. Declarado Bien de Interés Cultural, conserva la torre del homenaje y los restos de la iglesia de Santo Domingo de Silos.",
+    shortDescription: "Fortaleza templaria sobre un peñón con vistas espectaculares al Parque Natural.",
+    images: [
+      "https://images.unsplash.com/photo-1533154683836-84ea7a0bc310?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=500&fit=crop",
+    ],
+    coordinates: { lat: 37.920, lng: -2.991 },
+    openingHours: "Acceso libre todo el día",
+    tags: ["templario", "castillo", "vistas"],
+    featured: true,
+  },
+  {
+    id: "poi-11",
+    name: "Lago de la Bolera",
+    slug: "lago-bolera",
+    category: "naturaleza",
+    description:
+      "Embalse de aguas turquesas enclavado entre montañas calizas al sur del Parque Natural. Popular para la pesca deportiva y actividades acuáticas. Sus orillas ofrecen zonas de descanso y merendero con vistas a la Sierra del Pozo.",
+    shortDescription: "Embalse de aguas turquesas entre montañas calizas, ideal para pesca y descanso.",
+    images: [
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1432405972618-c6b0cfba8b00?w=800&h=500&fit=crop",
+    ],
+    coordinates: { lat: 37.783, lng: -2.972 },
+    tags: ["embalse", "pesca", "montaña"],
+    featured: false,
+  },
+  {
+    id: "poi-12",
+    name: "Cueva del Agua",
+    slug: "cueva-del-agua",
+    category: "naturaleza",
+    description:
+      "Gruta natural de la que brota una cascada permanente, creando un espectáculo visual y sonoro único. Situada cerca de Quesada, es un lugar mágico donde el agua emerge de la roca caliza formando una cortina cristalina en la entrada de la cueva.",
+    shortDescription: "Gruta natural con cascada permanente que brota de la roca caliza.",
+    images: [
+      "https://images.unsplash.com/photo-1432405972618-c6b0cfba8b00?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&h=500&fit=crop",
+    ],
+    coordinates: { lat: 37.881, lng: -2.965 },
+    tags: ["cueva", "cascada", "geología"],
+    featured: false,
+  },
+  {
+    id: "poi-13",
+    name: "Iglesia de San José",
+    slug: "iglesia-san-jose",
+    category: "religioso",
+    description:
+      "Templo barroco del siglo XVII situado en el centro de Cazorla. Destaca por su portada de piedra labrada y su torre campanario visible desde diversos puntos del pueblo. En su interior conserva retablos dorados y tallas de gran valor artístico.",
+    shortDescription: "Templo barroco del siglo XVII con portada labrada y retablos dorados.",
+    images: [
+      "https://images.unsplash.com/photo-1533154683836-84ea7a0bc310?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=500&fit=crop",
+    ],
+    coordinates: { lat: 37.908, lng: -3.001 },
+    openingHours: "L-D 10:00-13:00 y 18:00-20:00 (horario de culto)",
+    tags: ["barroco", "iglesia", "arte"],
+    featured: false,
+  },
+  {
+    id: "poi-14",
+    name: "Bóveda del Río Cerezuelo",
+    slug: "boveda-rio-cerezuelo",
+    category: "monumento",
+    description:
+      "Obra de ingeniería única en la que el río Cerezuelo discurre bajo las calles de Cazorla a través de una bóveda de piedra construida en el siglo XVII. Recorrer este túnel subterráneo permite descubrir la ingeniería hidráulica que sustenta el casco histórico del pueblo.",
+    shortDescription: "Túnel subterráneo del siglo XVII por donde el río Cerezuelo cruza bajo Cazorla.",
+    images: [
+      "https://images.unsplash.com/photo-1432405972618-c6b0cfba8b00?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1533154683836-84ea7a0bc310?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&h=500&fit=crop",
+    ],
+    coordinates: { lat: 37.908, lng: -2.999 },
+    openingHours: "Visitas guiadas: Sáb y Dom 11:00 y 13:00",
+    price: "5€ adultos, 3€ niños",
+    tags: ["subterráneo", "ingeniería", "río"],
+    featured: true,
+  },
 ];
 
 export const trails: Trail[] = [
@@ -652,7 +755,11 @@ export const accommodations: Accommodation[] = [
     description:
       "Tiendas safari de lujo en plena naturaleza con camas king size, baño privado y terraza con vistas. Incluye desayuno ecológico. Experiencia única para disfrutar del parque con todas las comodidades.",
     shortDescription: "Tiendas de lujo en plena naturaleza con todas las comodidades.",
-    images: [],
+    images: [
+      "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800&h=500&fit=crop",
+    ],
     address: "Paraje Los Llanos, 23478 Santiago-Pontones",
     coordinates: { lat: 37.9820, lng: -2.8350 },
     phone: "670 111 222",
@@ -676,7 +783,10 @@ export const events: Event[] = [
     description:
       "Uno de los festivales de blues más importantes de Europa, celebrado en la Plaza de Toros de Cazorla desde 1994. Artistas internacionales en un marco incomparable. Ambiente único con conciertos, jam sessions y gastronomía.",
     shortDescription: "Uno de los festivales de blues más importantes de Europa desde 1994.",
-    images: [],
+    images: [
+      "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=500&fit=crop",
+    ],
     date: "2026-07-17",
     endDate: "2026-07-19",
     time: "21:00",
@@ -694,7 +804,10 @@ export const events: Event[] = [
     description:
       "Fiestas patronales de Cazorla en honor al Santísimo Cristo del Consuelo. Una semana de celebraciones con procesiones, verbenas, concursos, fuegos artificiales y la tradicional feria. El evento más importante del calendario local.",
     shortDescription: "Fiestas patronales con procesiones, verbenas y feria tradicional.",
-    images: [],
+    images: [
+      "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1533154683836-84ea7a0bc310?w=800&h=500&fit=crop",
+    ],
     date: "2026-09-14",
     endDate: "2026-09-20",
     location: "Cazorla centro",
@@ -710,7 +823,10 @@ export const events: Event[] = [
     description:
       "Fiesta en honor al patrón de Cazorla. Romería al santuario con carrozas engalanadas, música y comida popular. Una tradición centenaria que reúne a todo el pueblo en un ambiente festivo y familiar.",
     shortDescription: "Romería centenaria al santuario con carrozas, música y comida popular.",
-    images: [],
+    images: [
+      "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800&h=500&fit=crop",
+    ],
     date: "2026-05-15",
     time: "10:00",
     location: "Santuario de San Isicio, Cazorla",
@@ -725,7 +841,11 @@ export const events: Event[] = [
     description:
       "El casco histórico se transforma en un mercado medieval con puestos de artesanía, productos típicos, espectáculos de cetrería, música antigua y talleres para niños. Degustación de productos de la sierra.",
     shortDescription: "El casco histórico se transforma con artesanía, cetrería y talleres.",
-    images: [],
+    images: [
+      "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1533154683836-84ea7a0bc310?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=500&fit=crop",
+    ],
     date: "2026-08-14",
     endDate: "2026-08-16",
     time: "11:00",
